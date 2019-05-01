@@ -1,0 +1,176 @@
+:root {
+	--current-background: url(./textures/grass.png);
+	--current-background-selected: url(./textures/grass-selected.png);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	cursor: default;
+	user-select: none;
+	-moz-user-select: none;
+}
+
+/*#game-board {
+	display: inline-block;
+	border: 3px solid green;
+}*/
+#main-stage {
+	display: inline-block;
+	border: 3px solid green;
+}
+.square {
+	box-sizing: border-box;
+	display: inline-block;
+	background-color: black;
+	width: 50px;
+	height: 50px;
+}
+#menu, #crafting-menu {
+	width: 1000px;
+	height: 500px;
+}
+
+.square:hover {
+	border: 1px solid red;
+}
+.has-player {
+	
+}
+#info-bar {
+	font-size: 0;
+	border: 2px solid black;
+	box-sizing: border-box;
+}
+.info-bar-entry {
+	font-size: 20px;
+	border: 2px solid black;
+	box-sizing: border-box;
+	display: inline-block;
+}
+.info-bar-entry:hover {
+	background-color: yellow;
+}
+#mini-map {
+	display: inline-block;
+}
+.mini-map-square {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border: 1px solid black;
+}
+.mini-map-square.selected {
+	background-color: green;
+}
+.mini-map-row {
+	font-size: 0;
+	display: block;
+}
+/*#menu.inactive {
+	display: none;
+}
+#game-board.inactive {
+	display: none;
+}*/
+.menu-column {
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	display: inline-block;
+}
+.menu-item {
+	font-size: 30px;
+	border: 3px solid orange;
+	height: 40px;
+}
+.menu-item:hover {
+	background-color: gray;
+}
+.side-menu {
+	width: 15%;
+	display: inline-block;
+	border: 2px solid red;
+	vertical-align: top;
+	font-size: 20px;
+	text-align: left;
+}
+.menu-item.selected {
+	background-color: red;
+}
+#wood-count.inactive {
+	display: none;
+}
+.row {
+	font-size: 0;
+}
+
+
+
+
+.square.has-air {
+	background: var(--current-background);
+}
+.square.has-air.selected {
+	background: var(--current-background-selected);
+}
+.square.has-wood {
+	background: url("./textures/wood.png");
+}
+.square.has-wood.selected {
+	background: url("./textures/wood-selected.png");
+}
+.square.has-small-stone {
+	background: url("./textures/small-stones.png"), var(--current-background);
+}
+.square.has-small-stone.selected {
+	background: url("./textures/small-stones-selected.png"), var(--current-background-selected);
+}
+.square.has-plant {
+	background: url("./textures/plant.png"), var(--current-background);
+}
+.square.has-plant.selected {
+	background: url("./textures/plant-selected.png"), var(--current-background-selected);
+}
+.square.has-farmland {
+	background: url("./textures/farmland.png");
+}
+.square.has-farmland.selected {
+	background: url("./textures/farmland-selected.png");
+}
+.square.has-seeds {
+	background: url("./textures/planted-seeds.png");
+}
+.square.has-seeds.selected {
+	background: url("./textures/planted-seeds-selected.png");
+}
+.square.has-crops {
+	background: url("./textures/crops.png");
+}
+.square.has-crops.selected {
+	background: url("./textures/crops-selected.png");
+}
+.square.has-barrel {
+	background: url("./textures/barrel.png");
+}
+.square.has-barrel.selected {
+	background: url("./textures/barrel-selected.png");
+}
+
+.square.facing-right {
+	background: url("./textures/player-facing-right.png");
+}
+.square.facing-left {
+	background: url("./textures/player-facing-left.png");
+}
+.square.facing-up {
+	background: url("./textures/player-facing-up.png");
+}
+.square.facing-down {
+	background: url("./textures/player-facing-down.png");
+}
+
+#map {
+	
+}
